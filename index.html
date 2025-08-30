@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href='https://fonts.googleapis.com/css?family=Readex Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Geologica' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Get your code at fontawesome.com-->
+  <title>Sistem Informasi Manajemen Beasiswa UMM</title>
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <h1><i class="fa fa-graduation-cap" style="font-size:30px;"></i> SchoolarMan</i></h1>
+    <br>
+    <br>
+    <h2>
+      <p><i class="fa fa-user-plus" style="font-size:25px"></i> ADMIN
+      </p>
+    </h2>
+    <br>
+    <h3>MAIN MENU</h3>
+    <ul>
+      <li><a href="index.html" class="active"><i class="fa fa-area-chart" style="font-size:20px"></i> Dashboard</li></a> 
+      <li><a href="informasibeasiswa.html"><i class="fa fa-graduation-cap" style="font-size:20px"></i> Informasi Beasiswa</li></a>
+      <li><a href="keloladata.html"><i class="fa fa-user-plus" style="font-size:20px"></i> Kelola Data</li></a>
+      <li><a href="verifikasidokumen.html"><i class="fa fa-file-text" style="font-size:20px"></i> Verifikasi Dokumen</li></a>
+    </ul>
+    <h3>OTHER</h3>
+    <ul>
+      <li><a href="setting.html"><i class="fa fa-gear fa-spin" style="font-size:20px"></i> Settings</li></a>
+      <li><a href="helpcenter.html"><i class="fa fa-question" style="font-size:20px"></i> Help Center</li></a>
+    </ul>
+    <h5>KEMAHASISWAAN</h5>
+    <h5>UMM</h5>
+    <p>&copy; 2025 Sistem Informasi Manajemen Beasiswa UMM</p>
+  </div>
+  <div class="content1">
+    <div>
+      <p>
+        Dashboard <i class="material-icons" style="font-size:24px">error_outline</i>
+      </p>
+    </div>
+    <div class="chart-container">
+      <canvas id="barChart"></canvas>
+      <canvas id="lineChart"></canvas>
+  </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+      // Grafik Garis
+      const ctxLine = document.getElementById('lineChart').getContext('2d');
+      const lineChart = new Chart(ctxLine, {
+          type: 'line',
+          data: {
+              labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+              datasets: [{
+                  label: 'Sales',
+                  data: [65, 59, 80, 81, 56, 55, 40],
+                  borderColor: 'rgba(75, 192, 192, 1)',
+                  borderWidth: 2,
+                  fill: false
+              }]
+          },
+          options: {
+              responsive: true,
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+
+      // Grafik Batang
+      const ctxBar = document.getElementById('barChart').getContext('2d');
+      const barChart = new Chart(ctxBar, {
+          type: 'bar',
+          data: {
+              labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+              datasets: [{
+                  label: '# of Votes',
+                  data: [12, 19, 3, 5, 2, 3],
+                  backgroundColor: [
+                      'rgba(255, 99, 132, 0.2)',
+                      'rgba(54, 162, 235, 0.2)',
+                      'rgba(255, 206, 86, 0.2)',
+                      'rgba(75, 192, 192, 0.2)',
+                      'rgba(153, 102, 255, 0.2)',
+                      'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                      'rgba(255, 99, 132, 1)',
+                      'rgba(54, 162, 235, 1)',
+                      'rgba(255, 206, 86, 1)',
+                      'rgba(75, 192, 192, 1)',
+                      'rgba(153, 102, 255, 1)',
+                      'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+              }]
+          },
+          options: {
+              responsive: true,
+              scales: {
+                  y: {
+                      beginAtZero: true
+                  }
+              }
+          }
+      });
+  </script>
+  </div>
+  <div class="content2">
+    <div>History <i class="material-icons" style="font-size:24px">error_outline</i></div>
+    <table>
+      <tr>
+        <td>Budi</td>
+        <td>2020103</td>
+        <td>Manajemen</td>
+        <td>KIP Kuliah</td>
+        <td>umm@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Rizal</td>
+        <td>2020225</td>
+        <td>Informatika</td>
+        <td>Djarum</td>
+        <td>umm@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Hanif</td>
+        <td>2020223</td>
+        <td>Informatika</td>
+        <td>BSI</td>
+        <td>umm@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Ridwan</td>
+        <td>2020103</td>
+        <td>Informatika</td>
+        <td>KIP Kuliah</td>
+        <td>umm@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Akmal</td>
+        <td>2020103</td>
+        <td>Psikologi</td>
+        <td>Djarum</td>
+        <td>umm@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Qashb</td>
+        <td>2020103</td>
+        <td>Psikologi</td>
+        <td>KIP Kuliah</td>
+        <td>umm@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Zihad</td>
+        <td>2020103</td>
+        <td>Infotmatika</td>
+        <td>KIP Kuliah</td>
+        <td>umm@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Ivandre</td>
+        <td>2020103</td>
+        <td>Informatika</td>
+        <td>KIP Kuliah</td>
+        <td>umm@gmail.com</td>
+      </tr>
+      <tr>
+        <td>Bustanul</td>
+        <td>2020103</td>
+        <td>Mesin</td>
+        <td>KIP Kuliah</td>
+        <td>umm@gmail.com</td>
+      </tr>
+    </table>
+  </div>
+</body>
+</html>

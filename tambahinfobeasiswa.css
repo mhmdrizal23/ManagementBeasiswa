@@ -1,0 +1,189 @@
+@font-face {
+  font-family: 'Readex Pro';
+  src: url('fonts/ReadexPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+  display: flex;
+  background-color: #f0f0f0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar{
+  background-color: #fff;
+  width: 250px;
+  height: 606px;
+  position:absolute;
+  top : 1%;
+  left: 0.5%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Readex Pro';
+  font-weight: semi-bold;
+}
+
+.sidebar h1{
+  margin: 0;
+  padding: 5px 10px;
+  color: #333;
+  text-align: left;
+  font-size: 20px;
+}
+
+.sidebar h2{
+  margin: 0;
+  padding: 0;
+}
+.sidebar h2 p{
+  margin: 0;
+  padding: 5%;
+  color: #333;
+  text-align: left;
+  font-family: 'Geologica';font-size: 16px;
+  font-weight: semi-bold;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.sidebar h3{
+  margin: 0;
+  padding: 0;
+  color: #999999;
+  text-align: left;
+  font-family: 'Geologica';font-size: 14px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li{
+  margin: 10px 0px;
+  color: #999999;
+  text-align: left;
+  font-family: 'Geologica';font-size: 12px;
+  font-weight: normal;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.sidebar ul li a {
+  color: #999999;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #ECECEC;
+    color: #002395;
+}
+
+.sidebar h5{
+  margin: 0;
+  padding: 0;
+  color: #999999;
+  text-align: center;
+  font-family: 'Geologica';font-size: 16px;
+}
+
+.sidebar p{
+  margin: 0;
+  padding: 0;
+  color: #999999;
+  text-align: center;
+  font-family: 'Geologica';font-size: 14px;
+}
+
+.sidebar i{
+  margin-right: 5px;
+}
+
+.content1{
+  flex: 1;
+  position: absolute;
+  top: 1%;
+  left: 21.5%;
+  background-color: #fff;
+  width: 1035px;
+  height: 606px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Readex Pro';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content1 div{
+  margin: 0;
+  padding: 5px;
+  color: #333;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Readex Pro';
+  font-weight: bold;
+}
+
+.title{
+  margin: 0;
+  color: #333;
+  text-align: left;
+}
+
+.title a{
+  color: #333;
+  text-decoration: none;
+  font-family: 'Readex Pro';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.title i{
+  color: #999999 ;
+}
+
+
+input {
+  background-color: #ECECEC; opacity: 40%;
+  font-family: "Readex Pro";
+  font-weight: normal;
+  font-size: 12px;
+  color: black;
+  width: 95.5%;
+  padding: 8px;
+  margin-top: 5px;
+  margin: 15px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow:  0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+  display: flex;
+  justify-content: center; /* Posisi horizontal */
+  align-items: center; /* Posisi vertikal */
+  height: 10vh; /* Agar tombol di tengah layar */
+}
+
+.btn {
+  padding: 10px 20px;
+  background: #37474F;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Readex Pro";
+  font-weight: normal;
+}
+
+.btn:hover {
+  background: #37474F;opacity: 80%;
+}

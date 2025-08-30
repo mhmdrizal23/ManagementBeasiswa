@@ -1,0 +1,201 @@
+@font-face {
+  font-family: 'Readex Pro';
+  src: url('fonts/ReadexPro-Light.woff2') format('woff2');
+  font-weight: 300;
+  font-style: normal;
+}
+body{
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar{
+  background-color: #fff;
+  width: 250px;
+  height: 606px;
+  position:absolute;
+  top : 1%;
+  left: 0.5%;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Readex Pro';
+  font-weight: semi-bold;
+}
+
+.sidebar h1{
+  margin: 0;
+  padding: 5px 10px;
+  color: #333;
+  text-align: left;
+  font-size: 20px;
+}
+
+.sidebar h2{
+  margin: 0;
+  padding: 0;
+}
+.sidebar h2 p{
+  margin: 0;
+  padding: 5%;
+  color: #333;
+  text-align: left;
+  font-family: 'Geologica';font-size: 16px;
+  font-weight: semi-bold;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+}
+
+.sidebar h3{
+  margin: 0;
+  padding: 0;
+  color: #999999;
+  text-align: left;
+  font-family: 'Geologica';font-size: 14px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li{
+  margin: 10px 0px;
+  color: #999999;
+  text-align: left;
+  font-family: 'Geologica';font-size: 12px;
+  font-weight: normal;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+.sidebar ul li a {
+  color: #999999;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+  transition: background-color 0.3s;
+}
+
+.sidebar ul li a:hover,
+.sidebar ul li a.active {
+    background-color: #ECECEC;
+    color: #002395;
+}
+
+.sidebar h5{
+  margin: 0;
+  padding: 0;
+  color: #999999;
+  text-align: center;
+  font-family: 'Geologica';font-size: 16px;
+}
+
+.sidebar p{
+  margin: 0;
+  padding: 0;
+  color: #999999;
+  text-align: center;
+  font-family: 'Geologica';font-size: 14px;
+}
+
+.sidebar i{
+  margin-right: 5px;
+}
+
+.content1{
+  flex: 1;
+  position: absolute;
+  top: 1%;
+  left: 21.5%;
+  background-color: #fff;
+  width: 1035px;
+  height: 250px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.content1 div{
+  margin: 0;
+  padding: 5px;
+  color: #333;
+  text-align: left;
+  font-size: 20px;
+  font-family: 'Readex Pro';
+  font-weight: bold;
+}
+
+.content1 div p{
+  margin: 0;
+  color: #333;
+  text-align: left;
+}
+
+.content1 div p i{
+  color: #999999 ;
+}
+
+.chart-container {
+  display: flex; /* Mengatur elemen dalam satu baris */
+  justify-content: space-around; /* Memberikan jarak antar grafik */
+  width: 100%;
+  margin: 20px 0;
+}
+
+.chart-container {
+  display: flex; /* Mengatur elemen dalam satu baris */
+  justify-content: space-around; /* Memberikan jarak antar grafik */
+  width: 100%;
+}
+
+canvas {
+  width: 400px !important; /* Mengatur lebar canvas */
+  height: 200px !important; /* Mengatur tinggi canvas */
+}
+
+.content2{
+  flex: 1;
+  position: absolute;
+  top: 45%;
+  left: 21.5%;
+  background-color: #fff;
+  width: 1035px;
+  height: 320px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  font-family: 'Readex Pro';
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.content2 div{
+  margin: 0;
+  padding: 5px;
+  color: #333;
+  text-align: left;
+}
+
+.content2 table{
+  width: 100%;
+  margin: 5 5;
+  border-collapse: collapse;
+  table-layout: auto;
+}
+
+.content2 table td{
+  padding: 8px;
+  text-align: left;
+  font-family: 'Readex Pro', sans-serif;
+  font-size: 14px;
+  font-weight: 100;
+}
+
+.footer p{
+  font-family: 'Geologica';
+  font-weight: normal;
+  font-size: 16px;
+}

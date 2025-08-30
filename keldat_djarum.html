@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="keldat_kip.css">
+  <link href='https://fonts.googleapis.com/css?family=Readex Pro' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Geologica' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--Get your code at fontawesome.com-->
+  <title>Sistem Informasi Manajemen Beasiswa UMM</title>
+</head>
+<body>
+  <div id="sidebar" class="sidebar">
+    <h1><i class="fa fa-graduation-cap" style="font-size:30px;"></i> SchoolarMan</i></h1>
+    <br>
+    <br>
+    <h2>
+      <p><i class="fa fa-user-plus" style="font-size:25px"></i> ADMIN
+      </p>
+    </h2>
+    <br>
+    <h3>MAIN MENU</h3>
+    <ul>
+      <li><a href="index.html"><i class="fa fa-area-chart" style="font-size:20px"></i> Dashboard</li></a> 
+      <li><a href="informasibeasiswa.html"><i class="fa fa-graduation-cap" style="font-size:20px"></i> Informasi Beasiswa</li></a>
+      <li><a href="keloladata.html" class="active"><i class="fa fa-user-plus" style="font-size:20px"></i> Kelola Data</li></a>
+      <li><a href="verifikasidokumen.html"><i class="fa fa-file-text" style="font-size:20px"></i> Verifikasi Dokumen</li></a>
+    </ul>
+    <h3>OTHER</h3>
+    <ul>
+      <li><a href="setting.html"><i class="fa fa-gear fa-spin" style="font-size:20px"></i> Settings</li></a>
+      <li><a href="helpcenter.html"><i class="fa fa-question" style="font-size:20px"></i> Help Center</li></a>
+    </ul>
+    <h5>KEMAHASISWAAN</h5>
+    <h5>UMM</h5>
+    <p>&copy; 2025 Sistem Informasi Manajemen Beasiswa UMM</p>
+  </div>
+  <div class="content1">
+    <div class="title">
+      <a href="keloladata.html">Kelola Data</a> <i class="material-icons" style="font-size:24px">error_outline</i>
+    </div>
+    <br>
+    <div class="titlebeasiswa">
+      <p><i class="fa fa-file-text-o" style="color: black;"></i> Djarum</p>
+    </div>
+    <br>
+    <div class="toolbar">
+      <div class="container">
+        <div class="box1">
+          <a href="tambahdatamahasiswa.html"><i class="material-icons" style="font-size:16px">add</i> Tambah Data Mahasiswa</a>
+        </div>
+        <div class="box2">
+         <a href="hapusinfobeasiswa.html">
+          <i class="material-icons" style="font-size:16px">manage_history</i> Ubah Data Mahasiswa
+        </a>
+        </div>
+      </div>
+      <div class="search-box">
+        <label for="search">Search :</label>
+        <input type="text" id="search" placeholder="🔍">
+      </div>
+    </div>
+    <br>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>#</th>
+            <th>Nama</th>
+            <th>NIM</th>
+            <th>Jurusan</th>
+            <th>Beasiswa</th>
+            <th>No Hp dan Email</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td><td>Yanti</td><td>2020350</td><td>Psikolog</td><td>Djarum</td><td>0824xxxxxx<br>umm@gmail.com</td><td><a href="">Ubah Data Mahasiswa</a></td>
+          </tr>
+          <tr>
+            <td>2</td><td>Rendy</td><td>2020245</td><td>Hukum</td><td>Djarum</td><td>0824xxxxxx<br>umm@gmail.com</td><td><a href="">Ubah Data Mahasiswa</a></td>
+          </tr>
+          <tr>
+            <td>3</td><td>Hanif</td><td>2020222</td><td>Informatika</td><td>Djarum</td><td>0824xxxxxx<br>umm@gmail.com</td><td><a href="">Ubah Data Mahasiswa</a></td>
+          </tr>
+          <tr>
+            <td>4</td><td>Rizal</td><td>2020225</td><td>Informatika</td><td>Djarum</td><td>0824xxxxxx<br>umm@gmail.com</td><td><a href="">Ubah Data Mahasiswa</a></td>
+          </tr>
+          <tr>
+            <td>5</td><td>Ridwan</td><td>2020229</td><td>Informatika</td><td>Djarum</td><td>0824xxxxxx<br>umm@gmail.com</td><td><a href="">Ubah Data Mahasiswa</a></td>
+          </tr>
+          <tr>
+            <td>6</td><td>Yogi</td><td>2021267</td><td>Psikologi</td><td>Djarum</td><td>0824xxxxxx<br>umm@gmail.com</td><td><a href="">Ubah Data Mahasiswa</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</body>
+</html>
