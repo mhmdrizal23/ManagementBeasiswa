@@ -1,0 +1,2 @@
+# ManagementBeasiswa
+Aplikasi Manajemen Beasiswa
